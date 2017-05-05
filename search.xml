@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[UML类图详解]]></title>
+    <url>%2F2017%2F05%2F06%2FUML%E7%B1%BB%E5%9B%BE%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML分为UML模型和UML类图。 一：UML类图思维导图 思维导图地址：http://naotu.baidu.com/file/df1cb03489378d2a541d3d8d181399da?token=2eb1feb8006fa607 密码：33bZ 二：详细分析和介绍 下面就从上面的思维导图开始，详细的介绍UML类图！ 1、 什么是UML，概念是什么？ 统一建模语言（英语：Unified Modeling Language，缩写 UML）是非专利的第三代建模和规约语言。UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。【维基百科】 UML分为UML模型和UML类图。 区分UML模型和UML图是非常重要的，UML图，包括用例图、协作图、活动图、序列图、部署图、构件图、类图、状态图，是模型中信息的图形表达方式，但是UML模型独立于UML图存在。 2、为什么要用UML？类图的作用 UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。 类图的作用： （1）：在软件工程中，类图是一种静态的结构图，描述了系统的类的集合，类的属性和类之间的关系，可以简化了人们对系统的理解； （2）：类图是系统分析和设计阶段的重要产物，是系统编码和测试的重要模型。3、 类的UML的介绍和画法？ 类的UML使用包含类名、属性、方法名以及参数。使用带分割线的长方形表示。 （1） 代码： 1234567891011121314151617181920212223242526272829303132333435/** * Created by dufy on 2017/1/12. */public class Person &#123; public String name; protected int age; private String accommodation = &quot;Earth&quot;;//住所 public String getName() &#123; return name; &#125; public void setName(String name) &#123; this.name = name; &#125; public int getAge() &#123; return age; &#125; public void setAge(int age) &#123; this.age = age; &#125; public String getAccommodation() &#123; return accommodation; &#125; public void setAccommodation(String accommodation) &#123; this.accommodation = accommodation; &#125;&#125; （2）类图：如上这个类图，Person类有三部分组成，分别是类名、属性和操作方法，下面一一进行介绍： 类名： 就是Java类的名字， 如果是类是抽象类则类名显示为斜体！ 其他地方不做改动。 Person 属性名： 就是java中的成员变量，一个类可以零到多个属性，java中属性（成员变量）的修饰符，类型和默认值都可以在UML中体现出来。通常用的表达式如下： 可见性 名称：类型[=默认值] 在Java中可见性分为三类，分别是public、private和protected，在类图分别用+、-和#表示；名称为属性的名称；类型在java中有八种基本的数据类型（byte、short、 int、long、 float、 double、 char、 boolean）及String和一些自定义的类型。默认值如变量 accommodation 有初始值为 Earth！ 操作方法在java中类的操作方法也是有个通用的表达式如下： 可见性 名称（[参数列表：参数1，参数2]）：返回类型[：void] 可见性如上名称表达式的介绍，名称就是方法名，参数列表是可选的项，多参数的话参数直接用英文逗号隔开；返回值也是个可选项，返回值类型可以说基本的数据类型、用户自定义类型和void。如果是构造方法，则无返回类型！ 4、类之间关系UML的介绍和画法？（1）泛化（Generalization）关系 ：空心箭头实线表示，箭头指向个人 泛化关系表示类与类之间的继承关系，类和类，接口和接口都可以是继承关系，父类称为基类或者超类，子类称为派生类。子类继承父类实现父类的所有功能，并拥有父类没有的功能！ 下面写了两个子类继承Person类！12345678910111213141516public class ChineseMan extends Person&#123; private String skinColor = &quot;yellow&quot;; public void sayHello()&#123; System.out.println(&quot;欢迎来中国 !&quot;); &#125;&#125;public class USAMan extends Person&#123; private String language = &quot;English&quot;; public void sayHello()&#123; System.out.println(&quot;Welcome to USA !&quot;); &#125;&#125; （2）实现（Realization）关系 ：空心箭头虚线表示，箭头指向约定的元素 实现关系就是java中的一个类和接口之间的关系，接口中一般是没有成员变量。所有操作都是抽象的，只有声明没有具体的实现。 1234567891011121314/** * Created by dufy on 2017/1/12. */public interface Car &#123; //车的牌子 public void brand();&#125;public class LandRover implements Car&#123; public void brand() &#123; System.out.println(&quot;This is a LandRover&quot;); &#125;&#125; （3）依赖（Dependence）关系：虚线箭头表示，箭头指向被依赖的对象 依赖关系是类与类之间最弱的关系，A元素变化会影响B元素，反之不成立。说简单点就是一个类使用了另一个类，这种关系具有临时性特征，一个类的改变由于另一类而受影响。 123456789101112public class ChineseMan extends Person&#123; private String skinColor = &quot;yellow&quot;; public void sayHello()&#123; System.out.println(&quot;欢迎来中国 !&quot;); &#125; public void useCar(LandRover car)&#123; System.out.println(car.brand();); &#125;&#125; （4）关联关系：实线箭头表示，箭头指向（也可以双向）被依赖元素 关联关系表示一个类和另一类有联系，它使一个类知道另一个类的属性和方法，被关联的元素间通常可以被独立的考虑。 123456789101112/** * Created by dufy on 2017/1/12. * 延安人-红色革命圣地欢迎你！ */public class YanAnMan &#123; public ChineseMan cm; //public List&lt;ChineseMan&gt; list; &#125; 1..1表示另一个类的一个对象只与该类的一个对象有关系0.. 表示另一个类的一个对象与该类的零个或多个对象有关系1.. 表示另一个类的一个对象与该类的一个或多个对象有关系0..1表示另一个类的一个对象没有或只与该类的一个对象有关系 （5）聚合（Aggregation）关系：带空心菱形头的实线表示，菱形头指向整体 聚合关系是整体和部分的关系，是一种强的关系，但是部分可以脱离整体而存在。是关联关系的一种。 比如有一辆LandRover，有轮胎和发动机！ （6）：组合（Composition）关系：带实心菱形头的实线表示，菱形头指向整体 组合关系是聚合关系的一种变种，便是了更强的组合关系，它要求整体的对象代表部分对象的生命周期。 比如YanMan 的一个大脑！ 三 ：使用的工具和详细的资料 使用的画图工具思维导图：百度脑图画UML：Microsoft Visio 完整的UML类图： demo原文件下载地址 http://download.csdn.net/detail/u010648555/9736298 四：参考资料 Java利器之UML类图详解：http://blog.jobbole.com/108568/UML类图符号 各种关系说明以及举例：http://www.cnblogs.com/h2zZhou/p/6256725.html 欢迎访问我的csdn博客，我们一同成长！ “不管做什么，只要坚持下去就会看到不一样！在路上，不卑不亢!“ 博客首页：http://blog.csdn.net/u010648555]]></content>
+      <categories>
+        <category>阿飞的世界</category>
+        <category>技术之路</category>
+        <category>软件设计</category>
+      </categories>
+      <tags>
+        <tag>软件设计</tag>
+        <tag>UML类图</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[岛上书店-读书笔记]]></title>
     <url>%2F2017%2F05%2F05%2F%E5%B2%9B%E4%B8%8A%E4%B9%A6%E5%BA%97-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[来吧，亲爱的， 且让我们来相爱， 趁你我 尚在人世。—-鲁米 因为从心底害怕自己不值得被爱，我们独来独往。然而就是因为独来独往，才让我们以为自己不值得被爱。有一天，你不知道是什么时候，你会驱车上路。有一天，你不知道是什么时候，你会遇到他(她)。你会被爱，因为你今生第一次真正不再孤单。你会选择不再孤单下去。]]></content>
@@ -9,8 +23,8 @@
         <category>读书与悟道</category>
       </categories>
       <tags>
-        <tag>文学</tag>
         <tag>生活</tag>
+        <tag>文学</tag>
         <tag>远方和诗</tag>
         <tag>爱情</tag>
       </tags>
@@ -24,8 +38,8 @@
         <category>成长点滴</category>
       </categories>
       <tags>
-        <tag>生活</tag>
         <tag>成长</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>

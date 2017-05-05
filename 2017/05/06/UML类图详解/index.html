@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="阿飞, java技术, 成长, 学习, 演讲, 健身 " />
+  <meta name="keywords" content="软件设计,UML类图," />
 
 
 
@@ -90,16 +90,27 @@
 
 
 
-<meta name="description" content="404 - ����ҳ��">
-<meta property="og:type" content="website">
-<meta property="og:title" content="每天都在变得更好的阿飞">
-<meta property="og:url" content="http://yoursite.com/404.html">
+<meta name="description" content="UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML分为UML模型和UML类图。">
+<meta name="keywords" content="软件设计,UML类图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UML类图详解">
+<meta property="og:url" content="http://yoursite.com/2017/05/06/UML类图详解/index.html">
 <meta property="og:site_name" content="每天都在变得更好的阿飞">
-<meta property="og:description" content="404 - ����ҳ��">
-<meta property="og:updated_time" content="2017-05-04T08:05:29.493Z">
+<meta property="og:description" content="UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML分为UML模型和UML类图。">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112170937998?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112201459140?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112205712515?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112212139264?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112214226115?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112220107775?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112221635131?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112222513262?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170112223038645?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-05-05T16:35:32.269Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="每天都在变得更好的阿飞">
-<meta name="twitter:description" content="404 - ����ҳ��">
+<meta name="twitter:title" content="UML类图详解">
+<meta name="twitter:description" content="UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML分为UML模型和UML类图。">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170112170937998?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
 
@@ -127,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/404.html"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/06/UML类图详解/"/>
 
 
 
 
 
-  <title> | 每天都在变得更好的阿飞</title>
+  <title>UML类图详解 | 每天都在变得更好的阿飞</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -168,7 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -307,31 +318,330 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h2 class="post-title" itemprop="name headline"></h2>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/06/UML类图详解/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dufyun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/run.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每天都在变得更好的阿飞">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">UML类图详解</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-06T00:30:15+08:00">
+                2017-05-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/阿飞的世界/" itemprop="url" rel="index">
+                    <span itemprop="name">阿飞的世界</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/阿飞的世界/技术之路/" itemprop="url" rel="index">
+                    <span itemprop="name">技术之路</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/阿飞的世界/技术之路/软件设计/" itemprop="url" rel="index">
+                    <span itemprop="name">软件设计</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/05/06/UML类图详解/" class="leancloud_visitors" data-flag-title="UML类图详解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
-      <!DOCTYPE HTML>
-<html>
-<head>
-    <title>404 - ����ҳ��</title>
-    <meta name="description" content="404������ҳ�治���ڣ�">
-    <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="robots" content="all">
-    <meta name="robots" content="index,follow">
-</head>
-<body>
-	<script type="text/javascript" src="https://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="dufyun.github.io" homepagename="�ص��ҵ���ҳ">
-</body>
-</html></script></body></html>
-    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML分为UML模型和UML类图。</p>
+<a id="more"></a>
+<p>一<strong>：UML类图思维</strong>导图</p>
+<p><img src="http://img.blog.csdn.net/20170112170937998?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br> 思维导图地址：<a href="http://naotu.baidu.com/file/df1cb03489378d2a541d3d8d181399da?token=2eb1feb8006fa607" target="_blank" rel="external">http://naotu.baidu.com/file/df1cb03489378d2a541d3d8d181399da?token=2eb1feb8006fa607</a>    密码：33bZ</p>
+<p> 二<strong>：详细分析和介绍</strong></p>
+<p>下面就从上面的思维导图开始，详细的介绍UML类图！</p>
+<p> <strong>1、 什么是UML，概念是什么？</strong><br>    统一建模语言（英语：Unified Modeling Language，缩写 UML）是非专利的第三代建模和规约语言。UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。【<a href="https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80" target="_blank" rel="external">维基百科</a>】</p>
+<p>   UML分为UML模型和UML类图。</p>
+<p>  <em>区分UML模型和UML图是非常重要的，UML图，包括用例图、协作图、活动图、序列图、部署图、构件图、类图、状态图，是模型中信息的图形表达方式，但是UML模型独立于UML图存在。</em></p>
+<p> <strong>2、为什么要用UML？类图的作用</strong><br>    UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。<br>     类图的作用：<br>     （1）：在软件工程中，类图是一种静态的结构图，描述了系统的类的集合，类的属性和类之间的关系，可以简化了人们对系统的理解；<br>     （2）：类图是系统分析和设计阶段的重要产物，是系统编码和测试的重要模型。<br><strong>3、 类的UML的介绍和画法？</strong><br>     类的UML使用包含<strong>类名、属性、方法名以及参数</strong>。使用带分割线的长方形表示。<br>    （1） <strong>代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Created by dufy on 2017/1/12.</div><div class="line"> */</div><div class="line">public  class    Person &#123;</div><div class="line">    </div><div class="line">    public String  name;</div><div class="line"></div><div class="line">    protected int  age;</div><div class="line"></div><div class="line">    private String accommodation = &quot;Earth&quot;;//住所</div><div class="line"></div><div class="line">    public String getName() &#123;</div><div class="line">        return name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setName(String name) &#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public int getAge() &#123;</div><div class="line">        return age;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setAge(int age) &#123;</div><div class="line">        this.age = age;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getAccommodation() &#123;</div><div class="line">        return accommodation;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setAccommodation(String accommodation) &#123;</div><div class="line">        this.accommodation = accommodation;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>（2）<strong>类图：</strong><br><img src="http://img.blog.csdn.net/20170112201459140?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>如上这个类图，Person类有三部分组成，分别是类名、属性和操作方法，下面一一进行介绍：</p>
+<ul>
+<li>类名：</li>
+</ul>
+<p>就是Java类的名字， 如果是类是抽象类则类名显示为斜体！ 其他地方不做改动。</p>
+<blockquote>
+<p><em>Person</em></p>
+</blockquote>
+<ul>
+<li>属性名：</li>
+</ul>
+<p>就是java中的成员变量，一个类可以零到多个属性，java中属性（成员变量）的修饰符，类型和默认值都可以在UML中体现出来。通常用的表达式如下：</p>
+<blockquote>
+<p>可见性  名称：类型[=默认值]</p>
+</blockquote>
+<p>在Java中可见性分为三类，分别是public、private和protected，在类图分别用+、-和#表示；名称为属性的名称；类型在java中有八种基本的数据类型（byte、short、 int、long、 float、 double、 char、 boolean）及String和一些自定义的类型。默认值如变量 accommodation 有初始值为 Earth！</p>
+<ul>
+<li>操作方法<br>在java中类的操作方法也是有个通用的表达式如下：</li>
+</ul>
+<blockquote>
+<p>可见性  名称（[参数列表：参数1，参数2]）：返回类型[：void]</p>
+</blockquote>
+<p>可见性如上名称表达式的介绍，名称就是方法名，参数列表是可选的项，多参数的话参数直接用英文逗号隔开；返回值也是个可选项，返回值类型可以说基本的数据类型、用户自定义类型和void。如果是构造方法，则无返回类型！</p>
+<p><strong>4、类之间关系UML的介绍和画法？</strong><br>（1）泛化（Generalization）关系 ：<strong>空心箭头实线表示，箭头指向个人</strong></p>
+<blockquote>
+<p>泛化关系表示类与类之间的继承关系，类和类，接口和接口都可以是继承关系，父类称为基类或者超类，子类称为派生类。子类继承父类实现父类的所有功能，并拥有父类没有的功能！</p>
+</blockquote>
+<p>下面写了两个子类继承Person类！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">public class ChineseMan extends Person&#123;</div><div class="line"></div><div class="line">    private String skinColor = &quot;yellow&quot;;</div><div class="line"></div><div class="line">    public  void sayHello()&#123;</div><div class="line">        System.out.println(&quot;欢迎来中国 !&quot;);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">public class USAMan extends Person&#123;</div><div class="line"></div><div class="line">    private String language = &quot;English&quot;;</div><div class="line"></div><div class="line">    public  void sayHello()&#123;</div><div class="line">        System.out.println(&quot;Welcome to USA !&quot;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="http://img.blog.csdn.net/20170112205712515?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>（2）实现（Realization）关系 ：<strong>空心箭头虚线表示，箭头指向约定的元素</strong></p>
+<blockquote>
+<p>实现关系就是java中的一个类和接口之间的关系，接口中一般是没有成员变量。所有操作都是抽象的，只有声明没有具体的实现。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">/**</div><div class="line"> * Created by dufy on 2017/1/12.</div><div class="line"> */</div><div class="line">public interface Car &#123;</div><div class="line">    //车的牌子</div><div class="line">    public void brand();</div><div class="line">&#125;</div><div class="line">public class LandRover implements Car&#123;</div><div class="line"></div><div class="line">    public void brand() &#123;</div><div class="line">        System.out.println(&quot;This is a LandRover&quot;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20170112212139264?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>（3）依赖（Dependence）关系：<strong>虚线箭头表示，箭头指向被依赖的对象</strong></p>
+<blockquote>
+<p>依赖关系是类与类之间最弱的关系，A元素变化会影响B元素，反之不成立。说简单点就是一个类使用了另一个类，这种关系具有临时性特征，一个类的改变由于另一类而受影响。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">public class ChineseMan extends Person&#123;</div><div class="line"></div><div class="line">    private String skinColor = &quot;yellow&quot;;</div><div class="line"></div><div class="line">    public  void sayHello()&#123;</div><div class="line">        System.out.println(&quot;欢迎来中国 !&quot;);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void useCar(LandRover car)&#123;</div><div class="line">        System.out.println(car.brand(););</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20170112214226115?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>（4）关联关系：<strong>实线箭头表示，箭头指向（也可以双向）被依赖元素</strong></p>
+<blockquote>
+<p>关联关系表示一个类和另一类有联系，它使一个类知道另一个类的属性和方法，被关联的元素间通常可以被独立的考虑。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Created by dufy on 2017/1/12.</div><div class="line"> * 延安人-红色革命圣地欢迎你！</div><div class="line"> */</div><div class="line">public class YanAnMan &#123;</div><div class="line"></div><div class="line"></div><div class="line">    public ChineseMan cm;</div><div class="line">    //public List&lt;ChineseMan&gt; list;</div><div class="line">    </div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20170112220107775?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<blockquote>
+<p>1..1表示另一个类的一个对象只与该类的一个对象有关系<br>0..<em> 表示另一个类的一个对象与该类的零个或多个对象有关系<br>1..</em> 表示另一个类的一个对象与该类的一个或多个对象有关系<br>0..1表示另一个类的一个对象没有或只与该类的一个对象有关系</p>
+</blockquote>
+<p>（5）聚合（Aggregation）关系：<strong>带空心菱形头的实线表示，菱形头指向整体</strong></p>
+<blockquote>
+<p>聚合关系是整体和部分的关系，是一种强的关系，但是部分可以脱离整体而存在。是关联关系的一种。</p>
+</blockquote>
+<p>比如有一辆LandRover，有轮胎和发动机！</p>
+<p><img src="http://img.blog.csdn.net/20170112221635131?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>（6）：组合（Composition）关系：带实心菱形头的实线表示，菱形头指向整体</p>
+<blockquote>
+<p>组合关系是聚合关系的一种变种，便是了更强的组合关系，它要求整体的对象代表部分对象的生命周期。</p>
+</blockquote>
+<p>比如YanMan 的一个大脑！</p>
+<p><img src="http://img.blog.csdn.net/20170112222513262?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p> 三 <strong>：使用的工具和详细的资料</strong></p>
+<ol>
+<li>使用的画图工具<br>思维导图：百度脑图<br>画UML：Microsoft Visio</li>
+<li><p>完整的UML类图：</p>
+<p><img src="http://img.blog.csdn.net/20170112223038645?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDY0ODU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>demo原文件下载地址</p>
+<p><a href="http://download.csdn.net/detail/u010648555/9736298" target="_blank" rel="external">http://download.csdn.net/detail/u010648555/9736298</a></p>
+<p>四<strong>：参考资料</strong></p>
+</li>
+</ol>
+<p>Java利器之UML类图详解：<a href="http://blog.jobbole.com/108568/" target="_blank" rel="external">http://blog.jobbole.com/108568/</a><br>UML类图符号 各种关系说明以及举例：<a href="http://www.cnblogs.com/h2zZhou/p/6256725.html" target="_blank" rel="external">http://www.cnblogs.com/h2zZhou/p/6256725.html</a></p>
+<hr>
+<font size="4" color="blue">欢迎访问我的csdn博客，我们一同成长！</font>
+
+<p>“<font size="5"><strong>不管做什么，只要坚持下去就会看到不一样！在路上，不卑不亢!</strong></font>“</p>
+<p><font size="4" color="red"> 博客首页</font>：<a href="http://blog.csdn.net/u010648555" target="_blank">http://blog.csdn.net/u010648555</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      dufyun
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2017/05/06/UML类图详解/" title="UML类图详解">http://yoursite.com/2017/05/06/UML类图详解/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/软件设计/" rel="tag"># 软件设计</a>
+          
+            <a href="/tags/UML类图/" rel="tag"># UML类图</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/05/岛上书店-读书笔记/" rel="next" title="岛上书店-读书笔记">
+                <i class="fa fa-chevron-left"></i> 岛上书店-读书笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
   </div>
 
 
@@ -575,6 +885,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
   
 
 
