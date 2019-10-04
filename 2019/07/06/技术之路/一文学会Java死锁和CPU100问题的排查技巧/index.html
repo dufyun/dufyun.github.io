@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="阿飞云, Java,Spring,分布式,互联网技术, 个人成长, 学习思考, 演讲健身 " />
+  <meta name="keywords" content="Java,编程技术," />
 
 
 
@@ -90,15 +90,37 @@
 
 
 
-<meta name="description" content="不管做什么，只要坚持下去就会看到不一样！在路上，不卑不亢!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿飞云">
-<meta property="og:url" content="http://www.aflyun.work/tags/java/index.html">
+<meta name="description" content="手把手的排查教程，有趣有料，真的很赞！">
+<meta name="keywords" content="Java,编程技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一文学会Java死锁和CPU 100% 问题的排查技巧">
+<meta property="og:url" content="http://www.aflyun.work/2019/07/06/技术之路/一文学会Java死锁和CPU100问题的排查技巧/index.html">
 <meta property="og:site_name" content="阿飞云">
-<meta property="og:description" content="不管做什么，只要坚持下去就会看到不一样！在路上，不卑不亢!">
+<meta property="og:description" content="手把手的排查教程，有趣有料，真的很赞！">
+<meta property="og:image" content="https://i.loli.net/2019/07/06/5d1f84ea6a69261619.jpeg">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0f25298b?w=528&h=298&f=gif&s=1784355">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0ce90575?w=496&h=441&f=png&s=19597">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0de4aeae?w=1658&h=2398&f=png&s=415906">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0f3a666a?w=925&h=189&f=png&s=17386">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0f60843f?w=1155&h=540&f=png&s=69799">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d1221c1b2?w=1090&h=612&f=png&s=52872">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d38eb5326?w=808&h=716&f=png&s=100336">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d390e6f81?w=1334&h=525&f=png&s=65783">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d3fe9eda1?w=1893&h=642&f=png&s=92344">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d3cdf6d6d?w=665&h=277&f=png&s=178146">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d4782b0d8?w=832&h=30&f=png&s=25480">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d48a7466f?w=781&h=322&f=png&s=231327">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d61ba8118?w=698&h=259&f=png&s=13978">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d65e66616?w=657&h=277&f=png&s=175840">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d7315e692?w=1186&h=632&f=png&s=151478">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d722b1a37?w=898&h=710&f=png&s=73626">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d73ffdfed?w=960&h=764&f=png&s=127867">
+<meta property="og:image" content="http://dufyun.gitee.io/images_bed/images/life/qrcode_javaCoder.png">
+<meta property="og:updated_time" content="2019-07-05T17:12:24.570Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿飞云">
-<meta name="twitter:description" content="不管做什么，只要坚持下去就会看到不一样！在路上，不卑不亢!">
+<meta name="twitter:title" content="一文学会Java死锁和CPU 100% 问题的排查技巧">
+<meta name="twitter:description" content="手把手的排查教程，有趣有料，真的很赞！">
+<meta name="twitter:image" content="https://i.loli.net/2019/07/06/5d1f84ea6a69261619.jpeg">
 
 
 
@@ -126,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="http://www.aflyun.work/tags/java/"/>
+  <link rel="canonical" href="http://www.aflyun.work/2019/07/06/技术之路/一文学会Java死锁和CPU100问题的排查技巧/"/>
 
 
 
 
 
-  <title>标签: java | 阿飞云</title>
+  <title>一文学会Java死锁和CPU 100% 问题的排查技巧 | 阿飞云</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -167,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -315,44 +337,351 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2>java<small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.aflyun.work/2019/07/06/技术之路/一文学会Java死锁和CPU100问题的排查技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="aflyun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/run.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞云">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">一文学会Java死锁和CPU 100% 问题的排查技巧</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-06T23:58:15+08:00">
+                2019-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/阿飞云的世界/" itemprop="url" rel="index">
+                    <span itemprop="name">阿飞云的世界</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/阿飞云的世界/技术之路/" itemprop="url" rel="index">
+                    <span itemprop="name">技术之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/07/06/技术之路/一文学会Java死锁和CPU100问题的排查技巧/" class="leancloud_visitors" data-flag-title="一文学会Java死锁和CPU 100% 问题的排查技巧">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p><img src="https://i.loli.net/2019/07/06/5d1f84ea6a69261619.jpeg" alt="pexels-photo-301703.jpeg"></p>
+<p>手把手的排查教程，有趣有料，真的很赞！</p>
+<a id="more"></a>
+<blockquote class="blockquote-center"><p>成为厉害人的肯定会遇到很多的坑，然后填一个坑，就是一次成长！ </p>
+</blockquote>    
+<blockquote>
+<p>做一个积极的人 </p>
+<p>编码、改bug、提升自己</p>
+<p>我有一个乐园，面向编程，春暖花开</p>
+</blockquote>
+<h3 id="00-本文简介"><a href="#00-本文简介" class="headerlink" title="00 本文简介"></a>00 本文简介</h3><p>作为一名搞技术的程序猿或者是攻城狮，想必你应该是对下面这两个问题有所了解，说不定你在实际的工作或者面试就有遇到过：</p>
+<p><strong>第一个问题：Java死锁如何排查和解决？</strong></p>
+<p><strong>第二个问题：服务器CPU占用率高达到100%排查和解决？</strong></p>
+<p><strong>第三个问题：有哪些工具能够快速查看线程使用情况？</strong></p>
+<p>本文对这三个问题进行总结整理，通过实例演示讲解，精彩干货，不容错过啊！</p>
+<p>前戏就这么多，高潮会很多，做好了，让我们直奔主题，发动小船，Let’s go！</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0f25298b?w=528&amp;h=298&amp;f=gif&amp;s=1784355" alt="小船"></p>
+<h3 id="01-Java死锁排查和解决"><a href="#01-Java死锁排查和解决" class="headerlink" title="01 Java死锁排查和解决"></a>01 Java死锁排查和解决</h3><p>要排查和解决死锁，首先思考三个问题：</p>
+<p><strong>1. 什么是死锁？</strong></p>
+<p><strong>2. 为什么会出现死锁？</strong></p>
+<p><strong>3. 怎么排查代码中出现了死锁？</strong></p>
+<p><strong>4. 如何避免写出死锁的代码？</strong></p>
+<p>作为技术人员（工程师），在出现问题的时候，能够尽快的去解决这个问题。但是在学习技术知识的时候，还是脚踏实地，多问一些为什么，一个好的问题，能够让自己思考，这方面的能力也一定要锻炼锻炼哦，这样才能更好的理解和掌握知识，并探究/触碰到更深入的地方。</p>
+<h4 id="1、啥是死锁？"><a href="#1、啥是死锁？" class="headerlink" title="1、啥是死锁？"></a>1、啥是死锁？</h4><p>死锁是指两个或两个以上的进程在执行过程中，由于竞争资源或者由于彼此通信而造成的一种阻塞的现象，若无外力作用，它们都将无法推进下去。此时称系统处于死锁状态或系统产生了死锁，这些永远在互相等待的进程称为死锁进程。[百度百科：死锁]</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0ce90575?w=496&amp;h=441&amp;f=png&amp;s=19597" alt="死锁图示"></p>
+<p><strong>注：进程和线程都可以发生死锁，只要满足死锁的条件！</strong></p>
+<h4 id="2、为啥子会出现死锁？"><a href="#2、为啥子会出现死锁？" class="headerlink" title="2、为啥子会出现死锁？"></a>2、为啥子会出现死锁？</h4><p>从上面的概念中我们知道</p>
+<p>（1）必须是两个或者两个以上进程（线程）</p>
+<p>（2）必须有竞争资源</p>
+<h4 id="3、怎么排查代码中出现了死锁？【重点来了】"><a href="#3、怎么排查代码中出现了死锁？【重点来了】" class="headerlink" title="3、怎么排查代码中出现了死锁？【重点来了】"></a>3、怎么排查代码中出现了死锁？【重点来了】</h4><p>首先整一个死锁的代码，看例子：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0de4aeae?w=1658&amp;h=2398&amp;f=png&amp;s=415906" alt="死锁小demo"></p>
+<p>上面这段代码执行后，就会出现死锁，那么排查的方法有如下：</p>
+<h4 id="第一个姿势：使用-jps-jstack"><a href="#第一个姿势：使用-jps-jstack" class="headerlink" title="第一个姿势：使用 jps + jstack"></a>第一个姿势：使用 jps + jstack</h4><p><strong>一</strong>：在windons命令窗口，使用<code>jps -l</code>【不会使用jps请自行查询资料】</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0f3a666a?w=925&amp;h=189&amp;f=png&amp;s=17386" alt="jps -l 命令"></p>
+<p><strong>二</strong>：使用 <code>jstack -l 12316</code> 【不会使用jstack请自行查询资料】</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d0f60843f?w=1155&amp;h=540&amp;f=png&amp;s=69799" alt="jstack"></p>
+<h4 id="第二个姿势：使用jconsole"><a href="#第二个姿势：使用jconsole" class="headerlink" title="第二个姿势：使用jconsole"></a>第二个姿势：使用jconsole</h4><p>在window打开 JConsole，JConsole是一个图形化的监控工具！</p>
+<p><strong>一</strong>：在windons命令窗口 ，输出  <code>JConsole</code>，如下图：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d1221c1b2?w=1090&amp;h=612&amp;f=png&amp;s=52872" alt="这里写图片描述"></p>
+<p><strong>二</strong>：选择到线程的tab上，如下截图。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d38eb5326?w=808&amp;h=716&amp;f=png&amp;s=100336" alt="这里写图片描述"></p>
+<h4 id="第三个姿势：使用Java-Visual-VM"><a href="#第三个姿势：使用Java-Visual-VM" class="headerlink" title="第三个姿势：使用Java Visual VM"></a>第三个姿势：使用Java Visual VM</h4><p>在window打开 jvisualvm，jvisualvm是一个图形化的监控工具！</p>
+<p><strong>一</strong>：在windons命令窗口 ，输出  <code>jvisualvm</code></p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d390e6f81?w=1334&amp;h=525&amp;f=png&amp;s=65783" alt="Java Visual VM"></p>
+<p><strong>二</strong>：依然是切换到线程这个TAB上，很明显的就有提示！</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d3fe9eda1?w=1893&amp;h=642&amp;f=png&amp;s=92344" alt="死锁检测"></p>
+<h4 id="4、如何避免死锁？"><a href="#4、如何避免死锁？" class="headerlink" title="4、如何避免死锁？"></a>4、如何避免死锁？</h4><p>上面说了死锁出现的原因以及通过三种方式来检测和排查死锁，下面更重要的东西来了，就是如何避免死锁，如果能够让写出的代码避免死锁出现也就没有上面这些排查的过程了。最好的是从源头控制问题，而不是后期遇到问题在去填坑。</p>
+<p>我看了阿里巴巴中最新的开发规约，里面有对避免死锁的说明，具体如下：</p>
+<hr>
+<p><font color="red">【强制】</font>对多个资源、数据库表、对象同时加锁时，需要保持一致的加锁顺序，否则可能会<br>造成死锁。<br>说明：线程一需要对表 A、B、C 依次全部加锁后才可以进行更新操作，那么线程二的加锁顺序也必须是<br>A、B、C，否则可能出现死锁。</p>
+<hr>
+<h3 id="02、Java-CPU-100-排查技巧"><a href="#02、Java-CPU-100-排查技巧" class="headerlink" title="02、Java CPU 100% 排查技巧"></a>02、Java CPU 100% 排查技巧</h3><h4 id="第一个姿势，步骤有点多，难度四星"><a href="#第一个姿势，步骤有点多，难度四星" class="headerlink" title="第一个姿势，步骤有点多，难度四星"></a>第一个姿势，步骤有点多，难度四星</h4><p>平时多积累一点，这样在遇到问题的时候就少句求人的话。如果在实际的开发中遇到CPU 100%问题，要怎么排查呢？如果你没有遇到过这个问题，请先自己思考10s，如果你遇到过，这个时候也正好可以在回顾一遍。</p>
+<p><strong>一</strong>、 使用<code>top</code>命令查看cpu占用资源较高的PID</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d3cdf6d6d?w=665&amp;h=277&amp;f=png&amp;s=178146" alt="top命令"></p>
+<p>当前占用cup100% 的PID为3455。</p>
+<p><strong>二</strong>、通过<code>jps</code>找到当前用户下的java程序PID </p>
+<p>执行<code>jps -l</code>能够打印出所有的应用的PID，找到有一个PID和这个cpu使用100%一样的ID！！！就知道是哪一个服务了。知道了对应的服务，在接着后续的分析步骤。</p>
+<p><strong>三</strong>、 使用 <code>pidstat -p &lt; PID &gt;  1 3  -u  -t</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-p：指定进程号</div><div class="line">-u：默认的参数，显示各个进程的cpu使用统计</div><div class="line">-t：显示选择任务的线程的统计信息外的额外信息</div></pre></td></tr></table></figure>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d4782b0d8?w=832&amp;h=30&amp;f=png&amp;s=25480" alt="这里写图片描述"><br><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d48a7466f?w=781&amp;h=322&amp;f=png&amp;s=231327" alt="这里写图片描述"></p>
+<p><strong>四</strong>、找到cpu占用较高的线程TID  ，通过上图发现是 <code>3467</code>的TID占用cup较大</p>
+<p><strong>五</strong>、 因为jstack命令输出文件记录的线程ID是16进制。因此我们先将TID转换为十六进制的表示方式，转换方式可以参考下图。</p>
+<p>   将<code>3467</code>转为十六进制 <code>d8d</code>，注意是小写！! 记录下来，后面会使用。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d61ba8118?w=698&amp;h=259&amp;f=png&amp;s=13978" alt="巧转进制"><br><strong>六</strong>、通过<code>jstack [-l] PID</code>输出当前进程的线程信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jstack PID  /temp/test.log</div></pre></td></tr></table></figure>
+<p><strong>七</strong>、查找 TID对应的线程(输出的线程id为十六进制)，找到对应的代码，使用命令查找哦，不要肉眼比对，具体命令请思考，给你表现机会。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d65e66616?w=657&amp;h=277&amp;f=png&amp;s=175840" alt="查找"></p>
+<p>找到之后具体分析这个线程在干什么，为什么会占用这么多的 CUP资源。</p>
+<p>PS：线程的几种状态如下说明：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">NEW,未启动的。不会出现在Dump中。</div><div class="line">RUNNABLE,在虚拟机内执行的。</div><div class="line">BLOCKED,受阻塞并等待监视器锁。</div><div class="line">WATING,无限期等待另一个线程执行特定操作。</div><div class="line">TIMED_WATING,有时限的等待另一个线程的特定操作。</div><div class="line">TERMINATED,已退出的。</div></pre></td></tr></table></figure>
+<h4 id="第二个姿势，待开发-奸笑脸"><a href="#第二个姿势，待开发-奸笑脸" class="headerlink" title="第二个姿势，待开发[奸笑脸]"></a>第二个姿势，待开发[奸笑脸]</h4><p>此处省略……，好多字。</p>
+<h3 id="03-推荐两个高效排查问题工具"><a href="#03-推荐两个高效排查问题工具" class="headerlink" title="03 推荐两个高效排查问题工具"></a>03 推荐两个高效排查问题工具</h3><p><strong>一</strong> ：<code>show-busy-java-threads</code></p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d7315e692?w=1186&amp;h=632&amp;f=png&amp;s=151478" alt="在这里插入图片描述"></p>
+<p>官网地址：<a href="https://github.com/oldratlee/useful-scripts/blob/master/docs/java.md#-show-busy-java-threads" target="_blank" rel="external">show-busy-java-threads</a>： <a href="https://github.com/oldratlee/useful-scripts/blob/master/docs/java.md#-show-busy-java-threads" target="_blank" rel="external">https://github.com/oldratlee/useful-scripts/blob/master/docs/java.md#-show-busy-java-threads</a></p>
+<p>简单安装和使用过程：</p>
+<ol>
+<li>下载 <a href="https://download.csdn.net/download/u010648555/10568140" target="_blank" rel="external">show-busy-java-threads</a></li>
+<li>上传服务器，然后进行解压</li>
+<li>然后执行对应的命令</li>
+</ol>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d722b1a37?w=898&amp;h=710&amp;f=png&amp;s=73626" alt="这里写图片描述"></p>
+<p><strong>二</strong>：阿里开源的问题定位神器 <code>arthas</code> 来定位问题。</p>
+<p>官网地址：<a href="https://alibaba.github.io/arthas/index.html" target="_blank" rel="external">arthas</a> ：<a href="https://alibaba.github.io/arthas/index.html" target="_blank" rel="external">https://alibaba.github.io/arthas/index.html</a></p>
+<p>这个里面有很多命令，如<code>thread</code> 支持一键展示当前最忙的前N个线程并打印堆栈，最简单的 <code>thread -n 10</code> 即可将最忙碌的十个线程快照打印出来，真正高效。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/6/16bc2e6d73ffdfed?w=960&amp;h=764&amp;f=png&amp;s=127867" alt="在这里插入图片描述"></p>
+<p>定位神器 <code>arthas</code> 安装过程就做介绍了，如果你还没有用过这个工具，我建议一定去用一下，说不定你会爱上它！</p>
+<h3 id="04-总结"><a href="#04-总结" class="headerlink" title="04 总结"></a>04 总结</h3><p>本文内容比较多，基本上是手把手的教程了，希望能够对你有所帮助，也建议没有遇到类似问题的伙伴，看完之后一定要亲自去实践一下操作过程，如果没有环境可以自行想办法搞一个测试例子。还是老话：<strong>不要眼高手低，看了和做了本质上两个概念，最终收获的也一定不同。</strong></p>
+<h3 id="05-彩蛋-另一个姿势"><a href="#05-彩蛋-另一个姿势" class="headerlink" title="05 彩蛋-另一个姿势"></a>05 彩蛋-另一个姿势</h3><p>也可以通过使用<code>jstack</code>找到系统的代码性能问题</p>
+<p>1、在进行压力测试的时候，使用jps找到应用的PID</p>
+<p>2、然后使用<code>jstack</code>输出出压力测试时候应用的dump信息</p>
+<p>3、分析输出的日志文件中那个方法<code>block</code>线程占用最多，这里可能是性能有问题，找到对应的代码分析</p>
+<hr>
+<p> <strong>谢谢你的阅读，如果您觉得这篇博文对你有帮助，请点赞或者喜欢，让更多的人看到！祝你每天开心愉快！</strong></p>
+<hr>
+<p><br></p>
+<p><strong>不管做什么，只要坚持下去就会看到不一样！在路上，不卑不亢!</strong></p>
+<p> <a href="https://aflyun.blog.csdn.net/" target="_blank" rel="external">博客首页 : https://aflyun.blog.csdn.net/</a></p>
+<p><strong>愿你我在人生的路上能都变成最好的自己，能够成为一个独挡一面的人</strong><br><img src="http://dufyun.gitee.io/images_bed/images/life/qrcode_javaCoder.png" alt=""></p>
+<p>&copy; 每天都在变得更好的阿飞云</p>
 
-      <h3 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/06/29/诗意人生/当你老了 - 威廉·巴特勒·叶芝/" itemprop="url">
-              
-                <span itemprop="name">当你老了 - 威廉·巴特勒·叶芝【转】</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h3>
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/img/donate/wechat.jpg" alt="aflyun WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/img/donate/alipay.jpg" alt="aflyun Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-29T23:13:14+08:00"
-              content="2017-06-29" >
-          06-29
-        </time>
-      </div>
 
-    </header>
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      aflyun
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.aflyun.work/2019/07/06/技术之路/一文学会Java死锁和CPU100问题的排查技巧/" title="一文学会Java死锁和CPU 100% 问题的排查技巧">http://www.aflyun.work/2019/07/06/技术之路/一文学会Java死锁和CPU100问题的排查技巧/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/编程技术/" rel="tag"># 编程技术</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/04/技术之路/MySQL 中NULL和空值的区别/" rel="next" title="MySQL 中NULL和空值的区别？">
+                <i class="fa fa-chevron-left"></i> MySQL 中NULL和空值的区别？
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -360,6 +689,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8yODUwOS81MDgw"></div>
+    
+  </div>
+
 
         </div>
         
@@ -379,8 +714,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/run.jpg"
@@ -462,6 +806,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#00-本文简介"><span class="nav-number">1.</span> <span class="nav-text">00 本文简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-Java死锁排查和解决"><span class="nav-number">2.</span> <span class="nav-text">01 Java死锁排查和解决</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、啥是死锁？"><span class="nav-number">2.1.</span> <span class="nav-text">1、啥是死锁？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、为啥子会出现死锁？"><span class="nav-number">2.2.</span> <span class="nav-text">2、为啥子会出现死锁？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、怎么排查代码中出现了死锁？【重点来了】"><span class="nav-number">2.3.</span> <span class="nav-text">3、怎么排查代码中出现了死锁？【重点来了】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第一个姿势：使用-jps-jstack"><span class="nav-number">2.4.</span> <span class="nav-text">第一个姿势：使用 jps + jstack</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二个姿势：使用jconsole"><span class="nav-number">2.5.</span> <span class="nav-text">第二个姿势：使用jconsole</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三个姿势：使用Java-Visual-VM"><span class="nav-number">2.6.</span> <span class="nav-text">第三个姿势：使用Java Visual VM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、如何避免死锁？"><span class="nav-number">2.7.</span> <span class="nav-text">4、如何避免死锁？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02、Java-CPU-100-排查技巧"><span class="nav-number">3.</span> <span class="nav-text">02、Java CPU 100% 排查技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一个姿势，步骤有点多，难度四星"><span class="nav-number">3.1.</span> <span class="nav-text">第一个姿势，步骤有点多，难度四星</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二个姿势，待开发-奸笑脸"><span class="nav-number">3.2.</span> <span class="nav-text">第二个姿势，待开发[奸笑脸]</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-推荐两个高效排查问题工具"><span class="nav-number">4.</span> <span class="nav-text">03 推荐两个高效排查问题工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-总结"><span class="nav-number">5.</span> <span class="nav-text">04 总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#05-彩蛋-另一个姿势"><span class="nav-number">6.</span> <span class="nav-text">05 彩蛋-另一个姿势</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -590,6 +950,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
   
 
 
@@ -621,6 +985,23 @@
 
 
 
+
+  
+<div id="lv-container" data-id="city" data-uid="MTAyMC8yODUwOS81MDgw">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
 
   
 
@@ -1040,137 +1421,6 @@
               error: function(newcounter, error) {
                 console.log('Failed to create');
               }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-
-  
-
-  
-
-  
-
-  
-  	 <!-- custom analytics part create by xiamo -->
-<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-<script>AV.initialize("ExokKsHxbnigFSOBrzmlCt66-gzGzoHsz", "FUr3a5OniuVBct3cUw89PoWG");</script>
-<script>
-function showTime(Counter) {
-	var query = new AV.Query(Counter);
-	$(".leancloud_visitors").each(function() {
-		var url = $(this).attr("id").trim();
-		query.equalTo("url", url);
-		query.find({
-			success: function(results) {
-				if (results.length == 0) {
-					var content = $(document.getElementById(url)).text() + ': 0';
-					$(document.getElementById(url)).text(content);
-					return;
-				}
-				for (var i = 0; i < results.length; i++) {
-					var object = results[i];
-					var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-					$(document.getElementById(url)).text(content);
-				}
-			},
-			error: function(object, error) {
-				console.log("Error: " + error.code + " " + error.message);
-			}
-		});
-	});
-}
-function addCount(Counter) {
-	var Counter = AV.Object.extend("Counter");
-	url = $(".leancloud_visitors").attr('id').trim();
-	title = $(".leancloud_visitors").attr('data-flag-title').trim();
-	var query = new AV.Query(Counter);
-	query.equalTo("url", url);
-	query.find({
-		success: function(results) {
-			if (results.length > 0) {
-				var counter = results[0];
-				counter.fetchWhenSave(true);
-				counter.increment("time");
-				counter.save(null, {
-					success: function(counter) {
-						var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(counter, error) {
-						console.log('Failed to save Visitor num, with error message: ' + error.message);
-					}
-				});
-			} else {
-				var newcounter = new Counter();
-				newcounter.set("title", title);
-				newcounter.set("url", url);
-				newcounter.set("time", 1);
-				newcounter.save(null, {
-					success: function(newcounter) {
-					    console.log("newcounter.get('time')="+newcounter.get('time'));
-						var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(newcounter, error) {
-						console.log('Failed to create');
-					}
-				});
-			}
-		},
-		error: function(error) {
-			console.log('Error:' + error.code + " " + error.message);
-		}
-	});
-}
-$(function() {
-	var Counter = AV.Object.extend("Counter");
-	if ($('.leancloud_visitors').length == 1) {
-		addCount(Counter);
-	} else if ($('.post-title-link').length > 1) {
-		showTime(Counter);
-	}
-});
-</script>
-  
-</body>
-</html>
-<script type="text/javascript" src="/js/src/love.js"></script>
-<script type="text/javascript" src="/js/src/click.js"></script>
-            }
             });
           }
         },
