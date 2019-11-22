@@ -329,7 +329,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017/06/29/诗意人生/当你老了 - 威廉·巴特勒·叶芝/" itemprop="url">
+            <a class="post-title-link" href="/posts/7a31fc1f.html" itemprop="url">
               
                 <span itemprop="name">当你老了 - 威廉·巴特勒·叶芝【转】</span>
               
@@ -395,7 +395,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -406,7 +406,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -417,7 +417,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1171,19 +1171,7 @@ $(function() {
 <script type="text/javascript" src="/js/src/love.js"></script>
 <script type="text/javascript" src="/js/src/click.js"></script>
 
-           }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
+').length == 1) {
         addCount(Counter);
       } else if ($('.post-title-link').length > 1) {
         showTime(Counter);
