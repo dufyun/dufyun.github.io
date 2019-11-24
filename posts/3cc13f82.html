@@ -602,6 +602,8 @@
           
   <div class="comments" id="comments">
     
+	   <div id="gitalk-container"></div>
+    
   </div>
 
 
@@ -870,6 +872,21 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'c5f514dc8e9e04a18841',
+          clientSecret: 'a64b1001a8473ab39eab6cdb02464d2a787fd835',
+          repo: 'dufyun.github.io',
+          owner: 'dufyun',
+          admin: ['dufyun'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
