@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Jave2-Java音频视频编码器]]></title>
+    <url>%2Fposts%2Ffb96d87.html</url>
+    <content type="text"><![CDATA[JAVE2处理高清无码-小电影 JAVE2（Java音频视频编码器）库是ffmpeg项目上的Java包装器。 Jave2-Java音频视频编码器 Jave2是什么JAVE2（Java音频视频编码器）库是ffmpeg项目上的Java包装器。 开发人员可以利用JAVE2将音频和视频文件从一种格式转码为另一种格式。 在示例中，您可以将AVI文件转换为MPEG文件，可以将DivX视频流转换为（类似YouTube的）Flash FLV文件，可以将WAV音频文件转换为MP3或Ogg Vorbis文件，可以分离并 对音频和视频轨道进行转码，您可以调整视频的大小，更改其大小和比例等。JAVE2支持许多其他格式，容器和操作。Jave2 的首页上介绍： JAVE2是一个小的Java库，它将ffmpeg包装到java类中。它是基于Carlo Pelliccia的杰作。 由于不再维护该代码，因此我们采用了该代码，并用当前版本替换了ffmpeg可执行文件，并修改了代码以使其与新的二进制文件一起使用。 Jave2 是在Jave的基础上进行开发的，Jave基于Carlo Pelliccia的 Jave版本,带有源代码的原始项目页面可以在这里找到：http://www.sauronsoftware.it/projects/jave/ 。我点击或许尘封很久的 Jave 网站，很庆幸打开了，然后看了下介绍个文档，真的是很久没更新了。大致看了下Documentation,如下安装要求。 Installation and requirementsIn order to use JAVE in your Java application, you have to add the file jave-1.0.jar in your application CLASSPATH.JAVE runs on a Java Runtime Environment J2SE v.1.4 or later. 意思也就是要用JAVE的话，需要将jave-1.0.jar 加入到应该的CLASSPATH下，然后JRE 的版本是J2SE v.1.4+。看了这句描述，你就应该知道这个项目是“古董”级别的项目了。 J2SE v.1.4 ,估计很多小伙伴只是听过，根本没有用过。 文档中其他的一些使用说明就不详细展开了，感兴趣的伙伴可以看下。地址上面已经贴出来。 Jave2 怎么玩jave2 github ：https://github.com/a-schild/jave2 ，看了下 四个月前还在更新 支持的操作系统+要求Java8+ ： 是不是很熟悉，这个应该是用过了吧，支持的操作系统那也是挺全面的。从“古董”过来的成为了“宝藏”。 支持 Maven/Gradle从github描述上，支持Maven/Gradle的方式引入依赖的jar，比 jave1.0的时候需要先从官网download jar，然后 手动在加入应用的 CLASSPATH 还是高端很多。 Jave2包含两个主要组件：1、 jave-core依赖关系，包括所有Java代码，与平台无关2、 jave-nativebin- 依赖关系，其中包括每个平台的二进制可执行文件有一个jave-all-deps项目，其中包括核心以及所有Windows和Linux二进制文件。 这里介绍下Maven的引入方式(使用前看下最新的版本号) 支持平台的所有二进制文件12345&lt;dependency&gt; &lt;groupId&gt;ws.schild&lt;/groupId&gt; &lt;artifactId&gt;jave-all-deps&lt;/artifactId&gt; &lt;version&gt;2.7.3&lt;/version&gt;&lt;/dependency&gt; 如果你想在一个或多个平台上使用，那么必须要引入 jave-core ，12345&lt;dependency&gt; &lt;groupId&gt;ws.schild&lt;/groupId&gt; &lt;artifactId&gt;jave-core&lt;/artifactId&gt; &lt;version&gt;2.7.3&lt;/version&gt;&lt;/dependency&gt; 然后是平台的特定jar。 如果仅在 Linux 64Bit 平台，则加入下面的依赖配置。 12345&lt;dependency&gt; &lt;groupId&gt;ws.schild&lt;/groupId&gt; &lt;artifactId&gt;jave-nativebin-linux64&lt;/artifactId&gt; &lt;version&gt;2.7.3&lt;/version&gt;&lt;/dependency&gt; 如果仅在 Windows 64Bit 平台，则加入下面的依赖配置。 12345&lt;dependency&gt; &lt;groupId&gt;ws.schild&lt;/groupId&gt; &lt;artifactId&gt;jave-nativebin-win64&lt;/artifactId&gt; &lt;version&gt;2.7.3&lt;/version&gt;&lt;/dependency&gt; 如果仅在 MACOS 64Bit 平台，则加入下面的依赖配置。 12345&lt;dependency&gt; &lt;groupId&gt;ws.schild&lt;/groupId&gt; &lt;artifactId&gt;jave-nativebin-osx64&lt;/artifactId&gt; &lt;version&gt;2.7.3&lt;/version&gt;&lt;/dependency&gt; Gradle方式这里就不做介绍 ，自行看文档说明，也比较简单。 实战演练 我用的是window 64 ，引入了最新 2.7.3版本 jave-core 、 jave-nativebin-win64 将arm文件转为mp3文件123456789101112131415161718192021222324252627282930public class ArmToMp3Test &#123; private static Logger logger = LoggerFactory.getLogger(ArmToMp3Test.class); public static void main(String[] args) &#123; try &#123; File source = new File("D:\\tmp\\Java编程技术乐园.amr"); File target = new File("D:\\tmp\\java编程技术乐园amrToMp3.mp3"); //Audio Attributes AudioAttributes audio = new AudioAttributes(); audio.setCodec("libmp3lame"); audio.setBitRate(128000); audio.setChannels(2); audio.setSamplingRate(44100); //Encoding attributes EncodingAttributes attrs = new EncodingAttributes(); attrs.setFormat("mp3"); attrs.setAudioAttributes(audio); //Encode Encoder encoder = new Encoder(); encoder.encode(new MultimediaObject(source), target, attrs); &#125; catch (Exception ex) &#123; logger.error("ArmToMp3Test#main 异常", ex); &#125; &#125;&#125;// 执行完，在 D:\\tmp\Java编程技术乐园amrToMp3.mp3 使用监听器监听转换进度-高级一点的用法用到 ws.schild.jave.EncoderProgressListener 接口：编码进度侦听器接口。 实现类的实例可以用来听的编码过程。1234567891011121314151617181920212223242526public interface EncoderProgressListener &#123; /** * This method is called before the encoding process starts, reporting * information about the source stream that will be decoded and re-encoded. * 这种方法是在编码过程开始之前被调用，报告关于将被解码和再编码的源数据位流的信息. * @param info Informations about the source multimedia stream. */ public void sourceInfo(MultimediaInfo info); /** * This method is called to notify a progress in the encoding process. * 这种方法被称为通知在编码过程中的进度。 * @param permil A permil value representing the encoding process progress. */ public void progress(int permil); /** * This method is called every time the encoder need to send a message * (usually, a warning). * 这种方法被称为每次编码器需要发送一条消息（通常，一个警告）。 * @param message The message sent by the encoder. */ public void message(String message);&#125; MyChanageEncoderProgressListener 12345678910111213141516171819202122232425262728/** * 自定义实现 &#123;@Link EncoderProgressListener&#125;监听编码进度 * @Author: dufy */public class MyChanageEncoderProgressListener implements EncoderProgressListener &#123; private static Logger logger = LoggerFactory.getLogger(MyChanageEncoderProgressListener.class); @Override public void sourceInfo(MultimediaInfo info) &#123; long ls = info.getDuration() / 1000; int hour = (int) (ls / 3600); int minute = (int) (ls % 3600) / 60; int second = (int) (ls - hour * 3600 - minute * 60); String length = hour + "时" + minute + "分" + second + "秒"; logger.info("MyChanageEncoderProgressListener#sourceInfo---&gt;&#123;&#125;",info.toString()); logger.info("MyChanageEncoderProgressListener#length---&gt;&#123;&#125;",length); &#125; @Override public void progress(int permil) &#123; logger.info("MyChanageEncoderProgressListener#progress---&gt;&#123;&#125;",permil); &#125; @Override public void message(String message) &#123; logger.info("MyChanageEncoderProgressListener#message---&gt;&#123;&#125;",message); &#125;&#125; MovToMp4ListenerTest 12345678910111213141516171819202122232425262728public class MovToMp4ListenerTest &#123; private static Logger logger = LoggerFactory.getLogger(MovToMp4ListenerTest.class); public static void main(String[] args) &#123; try &#123; File source = new File("D:\\tmp\\高清有码-小电影.mov"); File target = new File("D:\\tmp\\高清无码-小电影.mp4"); AudioAttributes audio = new AudioAttributes(); audio.setCodec("libvorbis"); VideoAttributes video = new VideoAttributes(); video.setCodec("mpeg4"); video.setBitRate(new Integer(160000)); video.setFrameRate(new Integer(30)); EncodingAttributes attrs = new EncodingAttributes(); attrs.setFormat("mp4"); attrs.setAudioAttributes(audio); attrs.setVideoAttributes(video); //Encode Encoder encoder = new Encoder(); encoder.encode(new MultimediaObject(source), target, attrs, new MyChanageEncoderProgressListener()); &#125; catch (Exception ex) &#123; logger.error("MovToMp4ListenerTest#main 异常", ex); &#125; &#125;&#125; 这里 有两个点说明下： 使用了监听器，能够监听 视频转换的进度 获取了视频的时长，其实大小也是可以获取的。 hour + “时” + minute + “分” + second + “秒 注：因为音视频的编码格式挺多，很多编解码协议还没看。上面例子也是找的文档配置，如有不对，欢迎指出。 其实jave2还有很多高端的操作，后续有机会在整理出来。 问题收集1、有说小伙伴在执行的时候遇到了 Cannot run program “C:\xxx\Local\Temp\jave\ffmpeg-amd64-2.7.3.exe” 12345ws.schild.jave.EncoderException: java.io.IOException: Cannot run program "C:\Users\acer\AppData\Local\Temp\jave\ffmpeg-amd64-2.7.3.exe": CreateProcess error=2, 系统找不到指定的文件。 at ws.schild.jave.Encoder.encode(Encoder.java:640) at ws.schild.jave.Encoder.encode(Encoder.java:398) at ws.schild.jave.Encoder.encode(Encoder.java:363) at org.learn.jave2.ArmToMp3Test.main(ArmToMp3Test.java:35) 报这个错这就是没加 jave-nativebin-win64 这个依赖。这里说明下，添加了win-64 jar，执行的时候会默认在本地下载一个 ffmpeg-amd64-2.7.3.exe 。相关源码：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748Encoder encoder = new Encoder();public Encoder() &#123; this.locator = new DefaultFFMPEGLocator();&#125;// DefaultFFMPEGLocatorpublic DefaultFFMPEGLocator() &#123; // 获取操作系统类型 String os = System.getProperty("os.name").toLowerCase(); boolean isWindows = os.contains("windows"); boolean isMac = os.contains("mac"); LOG.debug("Os name is &lt;&#123;&#125;&gt; isWindows: &#123;&#125; isMac: &#123;&#125;", new Object[]&#123;os, isWindows, isMac&#125;); File dirFolder = new File(System.getProperty("java.io.tmpdir"), "jave/"); if (!dirFolder.exists()) &#123; LOG.debug("Creating jave temp folder to place executables in &lt;&#123;&#125;&gt;", dirFolder.getAbsolutePath()); dirFolder.mkdirs(); &#125; else &#123; LOG.debug("Jave temp folder exists in &lt;&#123;&#125;&gt;", dirFolder.getAbsolutePath()); &#125; // 获取文件的后缀 String suffix = isWindows ? ".exe" : (isMac ? "-osx" : ""); String arch = System.getProperty("os.arch"); // 获取 ffmpeg 文件， File ffmpegFile = new File(dirFolder, "ffmpeg-" + arch + "-" + "2.7.3" + suffix); LOG.debug("Executable path: &#123;&#125;", ffmpegFile.getAbsolutePath()); if (ffmpegFile.exists()) &#123; LOG.debug("Executable exists in &lt;&#123;&#125;&gt;", ffmpegFile.getAbsolutePath()); &#125; else &#123; LOG.debug("Need to copy executable to &lt;&#123;&#125;&gt;", ffmpegFile.getAbsolutePath()); this.copyFile("ffmpeg-" + arch + suffix, ffmpegFile); &#125; if (!isWindows) &#123; try &#123; Runtime.getRuntime().exec(new String[]&#123;"/bin/chmod", "755", ffmpegFile.getAbsolutePath()&#125;); &#125; catch (IOException var9) &#123; LOG.error("Error setting executable via chmod", var9); &#125; &#125; // 知道了文件的路径 this.path = ffmpegFile.getAbsolutePath(); LOG.debug("ffmpeg executable found: &#123;&#125;", this.path);&#125;private void copyFile(String path, File dest) &#123; // 拷贝文件代码，具体略&#125; Jave2 总结Jave 虽然不在维护了，但是 它的“哥哥” Jave2 出现了，功能还是很强大的，基本上能满足工作的一些对 音频视频 的操作了。如果看了本文你也想玩一下这个工具，需要本文的演示代码以及相关文件(想看高清无码-小电影.mov)的话。可以关注公众号，回复 Jave2 获取。 如有其他问题，也欢迎留言，一起探讨交流。 后续如果图片破损请查看：Jave2-Java音频视频编码器]]></content>
+      <categories>
+        <category>阿飞云的世界</category>
+        <category>技术之路</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>编程技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[推荐两款程序员必备的画图神器]]></title>
     <url>%2Fposts%2Ffe0ba918.html</url>
     <content type="text"><![CDATA[一图胜千言，沟通效率那不是刚刚的！ 工具只是工具，画图工具也仅仅是画图工具而已！ 缘起最近经常有伙伴问我，作为程序员，有没有好的画图工具推荐，领导说Microsoft Visio画图工具很强，让我们使用，但是我就是用的不习惯。还有没有其他高端的牛逼的，容易上手，一用就爽的画图工具么。 针对这么个问题，我其实也是经验不足，Microsoft Visio我也用过，安装包大，还要破解，用的不多，还买个正版，我的脑子还没瓦塌，我是不会买的。 那么趁着周末给大家分享两款好用的画图工具，作为程序员还是经常需要画一画图的，你应该能明白我说的画图指的是什么，我也就不过多的强调了。 算了，还是强调下吧： 1、程序员不要认为写好代码就好，画好图也很重要，难道你没听过PPT架构师，PPT架构师不就天天画图么 第一点就是皮一下，早日成为架构师，在也不想写代码了 2、关于画图，俗话说，有图有真相！哦，不对，是一图胜千言。一图胜千言，沟通效率那不是刚刚的 这点很重要，不！是特别特别特别的重要！！！ 如果你在工作中没有画过图，或者你没有找到合适的画图工具的话，那么读完本文，建议尝试用其中一个开始你画图的表演吧。 第一个款画图工具：Draw.ioDraw.io 是一个很好用的免费流程图绘制工具。 你可以利用它绘制一系列的图表、图示或图形，包括流程图、UML 类图、组织结构图、泳道图、E-R 图、文氏图等等，适用于商务、工程、电气、网络设计、软件设计等诸多领域的专业绘图。它致力于成为完全开源、免费、并且高质量的绘图软件。 软件内置了相当丰富的绘图资源，包括各类形状、图标、连接器、模板，能满足绝大大多数的绘图需求，还可以导入第三方图标资源满足更多需求，完全可以取代微软 Visio 等流程图软件。 一大堆的介绍，感觉很高端，其实我真正用的也就几个。 这块软件可以在线访问进行画图，也可以下载安装包（绿色版）在本地打开进行画图，都是很方便的。默认打开是英文版，你如果英文和我一样菜的话，它也选择中文，可以进行切换，还是比较人性化。 截几个图看看吧： 如果打开后是英文的话，在语言选择中文然后重新打开软件即是中文版 简单截图一个流程图的例子，其他的用法你还不快去探索，等什么呢！ 这个画图工具也 提供了window便携版，双击就可以打开使用，无需网络。 下载地址也给你安排的妥妥当当，还不给我点个赞，鼓励一下么~ 下载说明，最新版本v12.9.3： github下载地址：https://github.com/jgraph/drawio-desktop/releases/tag/v12.9.3 考虑到github访问有时候比较慢，还提供了蓝奏云下载 蓝奏云下载Draw：https://www.lanzous.com/ib0kn1a 第二个款画图工具: ProcessOnProcessOn是一个面向垂直专业领域的作图工具和社交网络，提供基于云服务的免费流程梳理，可以在线画流程图、思维导图、UI原型图、UML、网络拓扑图、组织结构图等等， 您无需担心下载和更新的问题，不管Mac还是Windows，一个浏览器就可以随时随地的发挥创意，规划工作。 专注于为作图人员提供价值，利用互联网和社交技术颠覆了人们梳理流程的方法习惯，继而使商业用户获得比传统模式更高的效率和回报，改善人们对流程图的创作过程。提供了专业的流程模板和海量共享的流程图： 价值链图（EVC） 常规流程图(Flowchart) 事件过程链图(EPC) BPMN2.0图 Venn维恩图 -Org组织结构图 iOS线框图 -UI页面原型设计图 -UML统一建模语言 高端时序图 更强大的功能，支持多准标准的格式交换： 将Visio图转换成ProcessOn文件 将BPMN2.0文件转换成ProcessOn文件 将ProcessOn的BPMN图导出成BPMN格式文件 将ProcessOn的图导出成开放格式的pos元数据文件 等 这也是一款神器，用起来香不香，只有你用了才知道。 截几个图你瞅瞅看，以下截图均来源 ProcessOn 模板 非技术伙伴看到这里估计心里嘀咕，md 我又不画你们的技术图，撤了撤了，稍等 ，看下面~ 这个是一个思维导图，真的是爽的飞~ 在贴一下话关系图： 看到这里就问你又没有心动，如果你还没有注册的话，真心推荐你去使用，ProcessOn，免费在线作图，思维导图，流程图，实时协作。 期待我们能够在ProcessOn 遇到~ 叨叨最后在简单的叨b叨一下：工具只是工具，画图工具也仅仅是画图工具而已，能不能画好图，和画图工具的确有关系，但关系不大。 就如：给你一把锋利的斧头，让你去砍树，能不能砍倒树，关键在你自己。 上面就是本次推荐的两个画图工具，感谢你的阅读，希望对你有帮助，也欢迎你点赞留言和转发~ See you next good day~]]></content>
@@ -9,8 +22,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -22,8 +35,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -35,8 +48,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -48,8 +61,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -61,8 +74,8 @@
         <category>博客配置</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>编程技术</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -74,8 +87,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -87,8 +100,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -100,8 +113,8 @@
         <category>技术之路</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -113,8 +126,8 @@
         <category>技术书籍</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -126,8 +139,8 @@
         <category>技术书籍</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>
@@ -319,9 +332,9 @@
       </categories>
       <tags>
         <tag>成长</tag>
-        <tag>远方和诗</tag>
         <tag>表达</tag>
         <tag>演讲</tag>
+        <tag>远方和诗</tag>
       </tags>
   </entry>
   <entry>
@@ -447,8 +460,8 @@
         <category>软件设计</category>
       </categories>
       <tags>
-        <tag>编程技术</tag>
         <tag>Java</tag>
+        <tag>编程技术</tag>
       </tags>
   </entry>
   <entry>

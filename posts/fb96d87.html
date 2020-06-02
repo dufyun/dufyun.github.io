@@ -1,0 +1,1312 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Java,编程技术," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="JAVE2处理高清无码-小电影">
+<meta name="keywords" content="Java,编程技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jave2-Java音频视频编码器">
+<meta property="og:url" content="http://www.aflyun.work/posts/fb96d87.html">
+<meta property="og:site_name" content="阿飞云-流浪的杀手">
+<meta property="og:description" content="JAVE2处理高清无码-小电影">
+<meta property="og:image" content="https://pic.downk.cc/item/5ed5b990c2a9a83be513c637.jpg">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/370381/1589355525701-76ccefa2-e111-42aa-8a2a-fbe348837277.png#align=left&display=inline&height=303&margin=%5Bobject%20Object%5D&name=image.png&originHeight=606&originWidth=1577&size=154801&status=done&style=none&width=788.5">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/370381/1589356817040-e004a3af-6ba8-4a72-a3f6-afb5f46d0ba8.png#align=left&display=inline&height=143&margin=%5Bobject%20Object%5D&name=image.png&originHeight=286&originWidth=1261&size=54045&status=done&style=none&width=630.5">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/370381/1589355990773-58ad97f7-96ff-4eed-a0a3-817b63c0d4cf.png#align=left&display=inline&height=101&margin=%5Bobject%20Object%5D&name=image.png&originHeight=202&originWidth=1113&size=34516&status=done&style=none&width=557">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/370381/1589366189504-4dbdff67-2018-478e-b026-4698cb9b719a.png#align=left&display=inline&height=158&margin=%5Bobject%20Object%5D&name=image.png&originHeight=316&originWidth=899&size=154365&status=done&style=none&width=449.5">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/370381/1589359729807-6ff1247d-9dfc-4a80-9f19-e132a13c8d08.png#align=left&display=inline&height=84&margin=%5Bobject%20Object%5D&name=image.png&originHeight=168&originWidth=520&size=10220&status=done&style=none&width=260">
+<meta property="og:updated_time" content="2020-06-02T02:37:09.491Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jave2-Java音频视频编码器">
+<meta name="twitter:description" content="JAVE2处理高清无码-小电影">
+<meta name="twitter:image" content="https://pic.downk.cc/item/5ed5b990c2a9a83be513c637.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.aflyun.work/posts/fb96d87.html"/>
+
+
+
+
+
+  <title>Jave2-Java音频视频编码器 | 阿飞云-流浪的杀手</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8d50532fe43b25f99d05c6d73d0132e5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿飞云-流浪的杀手</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">流浪的杀手</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-external-link"></i> <br />
+            
+            工具
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-genderless"></i> <br />
+            
+            友链
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.aflyun.work/posts/fb96d87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="aflyun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/run.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞云-流浪的杀手">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Jave2-Java音频视频编码器</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-02T21:58:15+08:00">
+                2020-06-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/myworld/" itemprop="url" rel="index">
+                    <span itemprop="name">阿飞云的世界</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/myworld/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">技术之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://pic.downk.cc/item/5ed5b990c2a9a83be513c637.jpg" alt="5ed5b990c2a9a83be513c637"></p>
+<p>JAVE2处理高清无码-小电影</p>
+<a id="more"></a>
+<blockquote class="blockquote-center"><p>JAVE2（Java音频视频编码器）库是ffmpeg项目上的Java包装器。 </p>
+</blockquote>    
+<h1 id="Jave2-Java音频视频编码器"><a href="#Jave2-Java音频视频编码器" class="headerlink" title="Jave2-Java音频视频编码器"></a>Jave2-Java音频视频编码器</h1><p><a name="atVVv"></a></p>
+<h2 id="Jave2是什么"><a href="#Jave2是什么" class="headerlink" title="Jave2是什么"></a>Jave2是什么</h2><p><br>JAVE2（Java音频视频编码器）库是ffmpeg项目上的Java包装器。 开发人员可以利用JAVE2将音频和视频文件从一种格式转码为另一种格式。 在示例中，您可以将AVI文件转换为MPEG文件，可以将DivX视频流转换为（类似YouTube的）Flash FLV文件，可以将WAV音频文件转换为MP3或Ogg Vorbis文件，可以分离并 对音频和视频轨道进行转码，您可以调整视频的大小，更改其大小和比例等。<br>JAVE2支持许多其他格式，容器和操作。<br><br><br>Jave2 的首页上介绍：</p>
+<blockquote>
+<p>JAVE2是一个小的Java库，它将ffmpeg包装到java类中。<br>它是基于Carlo Pelliccia的杰作。 由于不再维护该代码，因此我们采用了该代码，并用当前版本替换了ffmpeg可执行文件，并修改了代码以使其与新的二进制文件一起使用。</p>
+</blockquote>
+<p><br>Jave2 是在Jave的基础上进行开发的，Jave基于Carlo Pelliccia的 Jave版本,带有源代码的原始项目页面可以在这里找到：<br><a href="http://www.sauronsoftware.it/projects/jave/" target="_blank" rel="external">http://www.sauronsoftware.it/projects/jave/</a> 。我点击或许尘封很久的 Jave 网站，很庆幸打开了，然后看了下介绍个文档，真的是很久没更新了。<br><img src="https://cdn.nlark.com/yuque/0/2020/png/370381/1589355525701-76ccefa2-e111-42aa-8a2a-fbe348837277.png#align=left&amp;display=inline&amp;height=303&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=606&amp;originWidth=1577&amp;size=154801&amp;status=done&amp;style=none&amp;width=788.5" alt="image.png"><br><br><br>大致看了下Documentation,如下安装要求。</p>
+<blockquote>
+<p><a name="24395ef9"></a></p>
+<h1 id="Installation-and-requirements"><a href="#Installation-and-requirements" class="headerlink" title="Installation and requirements"></a>Installation and requirements</h1><p>In order to use JAVE in your Java application, you have to add the file <em>jave-1.0.jar</em> in your application CLASSPATH.<br>JAVE runs on a Java Runtime Environment J2SE v.1.4 or later.</p>
+</blockquote>
+<p><br>意思也就是要用JAVE的话，需要将<em>jave-1.0.jar </em>加入到应该的CLASSPATH下，然后JRE 的版本是J2SE v.1.4+。看了这句描述，你就应该知道这个项目是“古董”级别的项目了。</p>
+<blockquote>
+<p>J2SE v.1.4 ,估计很多小伙伴只是听过，根本没有用过。</p>
+</blockquote>
+<p>文档中其他的一些使用说明就不详细展开了，感兴趣的伙伴可以看下。地址上面已经贴出来。<br><a name="1408m"></a></p>
+<h2 id="Jave2-怎么玩"><a href="#Jave2-怎么玩" class="headerlink" title="Jave2 怎么玩"></a>Jave2 怎么玩</h2><p>jave2 github ：<a href="https://github.com/a-schild/jave2" target="_blank" rel="external">https://github.com/a-schild/jave2</a> ，看了下 四个月前还在更新<br><img src="https://cdn.nlark.com/yuque/0/2020/png/370381/1589356817040-e004a3af-6ba8-4a72-a3f6-afb5f46d0ba8.png#align=left&amp;display=inline&amp;height=143&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=286&amp;originWidth=1261&amp;size=54045&amp;status=done&amp;style=none&amp;width=630.5" alt="image.png"><br><a name="2ynU5"></a></p>
+<h3 id="支持的操作系统-要求"><a href="#支持的操作系统-要求" class="headerlink" title="支持的操作系统+要求"></a>支持的操作系统+要求</h3><p><img src="https://cdn.nlark.com/yuque/0/2020/png/370381/1589355990773-58ad97f7-96ff-4eed-a0a3-817b63c0d4cf.png#align=left&amp;display=inline&amp;height=101&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=202&amp;originWidth=1113&amp;size=34516&amp;status=done&amp;style=none&amp;width=557" alt="image.png"><br>Java8+ ： 是不是很熟悉，这个应该是用过了吧，支持的操作系统那也是挺全面的。从“古董”过来的成为了“宝藏”。<br></p>
+<p><a name="PguO5"></a></p>
+<h3 id="支持-Maven-Gradle"><a href="#支持-Maven-Gradle" class="headerlink" title="支持 Maven/Gradle"></a>支持 Maven/Gradle</h3><p>从github描述上，支持Maven/Gradle的方式引入依赖的jar，比 jave1.0的时候需要先从官网download jar，然后 手动在加入应用的 CLASSPATH 还是高端很多。</p>
+<p>Jave2包含两个主要组件：<br>1、 jave-core依赖关系，包括所有Java代码，与平台无关<br>2、 jave-nativebin- <platform>依赖关系，其中包括每个平台的二进制可执行文件<br>有一个jave-all-deps项目，其中包括核心以及所有Windows和Linux二进制文件。</platform></p>
+<p>这里介绍下Maven的引入方式(使用前看下最新的版本号)</p>
+<ul>
+<li>支持平台的所有二进制文件<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>ws.schild<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jave-all-deps<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果你想在一个或多个平台上使用，那么必须要引入 jave-core ，<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>ws.schild<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jave-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>然后是平台的特定jar。</p>
+<ul>
+<li><p>如果仅在 Linux 64Bit 平台，则加入下面的依赖配置。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>ws.schild<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jave-nativebin-linux64<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>如果仅在 Windows 64Bit 平台，则加入下面的依赖配置。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>ws.schild<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jave-nativebin-win64<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>如果仅在 MACOS 64Bit 平台，则加入下面的依赖配置。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>ws.schild<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jave-nativebin-osx64<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><br>Gradle方式这里就不做介绍 ，自行看文档说明，也比较简单。</p>
+<p><a name="kdW3S"></a></p>
+<h3 id="实战演练"><a href="#实战演练" class="headerlink" title="实战演练"></a>实战演练</h3><blockquote>
+<p>我用的是window 64 ，引入了最新 2.7.3版本  jave-core 、 jave-nativebin-win64</p>
+</blockquote>
+<p><a name="SFsu0"></a></p>
+<h4 id="将arm文件转为mp3文件"><a href="#将arm文件转为mp3文件" class="headerlink" title="将arm文件转为mp3文件"></a>将arm文件转为mp3文件</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArmToMp3Test</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Logger logger = LoggerFactory.getLogger(ArmToMp3Test.class);</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			File source = <span class="keyword">new</span> File(<span class="string">"D:\\tmp\\Java编程技术乐园.amr"</span>);</div><div class="line">			File target = <span class="keyword">new</span> File(<span class="string">"D:\\tmp\\java编程技术乐园amrToMp3.mp3"</span>);</div><div class="line"></div><div class="line">			<span class="comment">//Audio Attributes</span></div><div class="line">			AudioAttributes audio = <span class="keyword">new</span> AudioAttributes();</div><div class="line">			audio.setCodec(<span class="string">"libmp3lame"</span>);</div><div class="line">			audio.setBitRate(<span class="number">128000</span>);</div><div class="line">			audio.setChannels(<span class="number">2</span>);</div><div class="line">			audio.setSamplingRate(<span class="number">44100</span>);</div><div class="line"></div><div class="line">			<span class="comment">//Encoding attributes</span></div><div class="line">			EncodingAttributes attrs = <span class="keyword">new</span> EncodingAttributes();</div><div class="line">			attrs.setFormat(<span class="string">"mp3"</span>);</div><div class="line">			attrs.setAudioAttributes(audio);</div><div class="line"></div><div class="line">			<span class="comment">//Encode</span></div><div class="line">			Encoder encoder = <span class="keyword">new</span> Encoder();</div><div class="line">			encoder.encode(<span class="keyword">new</span> MultimediaObject(source), target, attrs);</div><div class="line"></div><div class="line">		&#125; <span class="keyword">catch</span> (Exception ex) &#123;</div><div class="line">			logger.error(<span class="string">"ArmToMp3Test#main 异常"</span>, ex);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 执行完，在 D:\\tmp\Java编程技术乐园amrToMp3.mp3</span></div></pre></td></tr></table></figure>
+<p><a name="nOAoh"></a></p>
+<h4 id="使用监听器监听转换进度-高级一点的用法"><a href="#使用监听器监听转换进度-高级一点的用法" class="headerlink" title="使用监听器监听转换进度-高级一点的用法"></a>使用监听器监听转换进度-高级一点的用法</h4><p>用到 ws.schild.jave.EncoderProgressListener 接口：编码进度侦听器接口。 实现类的实例可以用来听的编码过程。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">EncoderProgressListener</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * This method is called before the encoding process starts, reporting</div><div class="line">     * information about the source stream that will be decoded and re-encoded.</div><div class="line">     * 这种方法是在编码过程开始之前被调用，报告关于将被解码和再编码的源数据位流的信息.</div><div class="line">     * <span class="doctag">@param</span> info Informations about the source multimedia stream.</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sourceInfo</span><span class="params">(MultimediaInfo info)</span></span>;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * This method is called to notify a progress in the encoding process.</div><div class="line">     * 这种方法被称为通知在编码过程中的进度。</div><div class="line">     * <span class="doctag">@param</span> permil A permil value representing the encoding process progress.</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">progress</span><span class="params">(<span class="keyword">int</span> permil)</span></span>;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * This method is called every time the encoder need to send a message</div><div class="line">     * (usually, a warning).</div><div class="line">     * 这种方法被称为每次编码器需要发送一条消息（通常，一个警告）。</div><div class="line">     * <span class="doctag">@param</span> message The message sent by the encoder.</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">message</span><span class="params">(String message)</span></span>;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li><p>MyChanageEncoderProgressListener </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 自定义实现 &#123;<span class="doctag">@Link</span> EncoderProgressListener&#125;监听编码进度</div><div class="line"> * <span class="doctag">@Author</span>: dufy</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyChanageEncoderProgressListener</span> <span class="keyword">implements</span> <span class="title">EncoderProgressListener</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Logger logger = LoggerFactory.getLogger(MyChanageEncoderProgressListener.class);</div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sourceInfo</span><span class="params">(MultimediaInfo info)</span> </span>&#123;</div><div class="line">		<span class="keyword">long</span> ls = info.getDuration() / <span class="number">1000</span>;</div><div class="line">		<span class="keyword">int</span> hour = (<span class="keyword">int</span>) (ls / <span class="number">3600</span>);</div><div class="line">		<span class="keyword">int</span> minute = (<span class="keyword">int</span>) (ls % <span class="number">3600</span>) / <span class="number">60</span>;</div><div class="line">		<span class="keyword">int</span> second = (<span class="keyword">int</span>) (ls - hour * <span class="number">3600</span> - minute * <span class="number">60</span>);</div><div class="line">		String length = hour + <span class="string">"时"</span> + minute + <span class="string">"分"</span> + second + <span class="string">"秒"</span>;</div><div class="line">		logger.info(<span class="string">"MyChanageEncoderProgressListener#sourceInfo---&gt;&#123;&#125;"</span>,info.toString());</div><div class="line">		logger.info(<span class="string">"MyChanageEncoderProgressListener#length---&gt;&#123;&#125;"</span>,length);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">progress</span><span class="params">(<span class="keyword">int</span> permil)</span> </span>&#123;</div><div class="line">		logger.info(<span class="string">"MyChanageEncoderProgressListener#progress---&gt;&#123;&#125;"</span>,permil);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">message</span><span class="params">(String message)</span> </span>&#123;</div><div class="line">		logger.info(<span class="string">"MyChanageEncoderProgressListener#message---&gt;&#123;&#125;"</span>,message);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>MovToMp4ListenerTest</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MovToMp4ListenerTest</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Logger logger = LoggerFactory.getLogger(MovToMp4ListenerTest.class);</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			File source = <span class="keyword">new</span> File(<span class="string">"D:\\tmp\\高清有码-小电影.mov"</span>);</div><div class="line">			File target = <span class="keyword">new</span> File(<span class="string">"D:\\tmp\\高清无码-小电影.mp4"</span>);</div><div class="line"></div><div class="line">			AudioAttributes audio = <span class="keyword">new</span> AudioAttributes();</div><div class="line">			audio.setCodec(<span class="string">"libvorbis"</span>);</div><div class="line">			VideoAttributes video = <span class="keyword">new</span> VideoAttributes();</div><div class="line">			video.setCodec(<span class="string">"mpeg4"</span>);</div><div class="line">			video.setBitRate(<span class="keyword">new</span> Integer(<span class="number">160000</span>));</div><div class="line">			video.setFrameRate(<span class="keyword">new</span> Integer(<span class="number">30</span>));</div><div class="line">			EncodingAttributes attrs = <span class="keyword">new</span> EncodingAttributes();</div><div class="line">			attrs.setFormat(<span class="string">"mp4"</span>);</div><div class="line">			attrs.setAudioAttributes(audio);</div><div class="line">			attrs.setVideoAttributes(video);</div><div class="line"></div><div class="line">			<span class="comment">//Encode</span></div><div class="line">			Encoder encoder = <span class="keyword">new</span> Encoder();</div><div class="line">			encoder.encode(<span class="keyword">new</span> MultimediaObject(source), target, attrs, <span class="keyword">new</span> MyChanageEncoderProgressListener());</div><div class="line"></div><div class="line">		&#125; <span class="keyword">catch</span> (Exception ex) &#123;</div><div class="line">			logger.error(<span class="string">"MovToMp4ListenerTest#main 异常"</span>, ex);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这里 有两个点说明下：</p>
+<ul>
+<li>使用了监听器，能够监听 视频转换的进度</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/370381/1589366189504-4dbdff67-2018-478e-b026-4698cb9b719a.png#align=left&amp;display=inline&amp;height=158&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=316&amp;originWidth=899&amp;size=154365&amp;status=done&amp;style=none&amp;width=449.5" alt="image.png"></p>
+<ul>
+<li>获取了视频的时长，其实大小也是可以获取的。<blockquote>
+<p>hour + “时” + minute + “分” + second + “秒</p>
+</blockquote>
+</li>
+</ul>
+<p><br>注：因为音视频的编码格式挺多，很多编解码协议还没看。上面例子也是找的文档配置，如有不对，欢迎指出。</p>
+<p><strong>其实jave2还有很多高端的操作，后续有机会在整理出来。</strong></p>
+<p><a name="MuJ0Z"></a></p>
+<h4 id="问题收集"><a href="#问题收集" class="headerlink" title="问题收集"></a>问题收集</h4><p><br>1、有说小伙伴在执行的时候遇到了 </p>
+<blockquote>
+<p>Cannot run program “C:\xxx\Local\Temp\jave\ffmpeg-amd64-2.7.3.exe”</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ws.schild.jave.EncoderException: java.io.IOException: Cannot run program <span class="string">"C:\Users\acer\AppData\Local\Temp\jave\ffmpeg-amd64-2.7.3.exe"</span>: CreateProcess error=<span class="number">2</span>, 系统找不到指定的文件。</div><div class="line">	at ws.schild.jave.Encoder.encode(Encoder.java:<span class="number">640</span>)</div><div class="line">	at ws.schild.jave.Encoder.encode(Encoder.java:<span class="number">398</span>)</div><div class="line">	at ws.schild.jave.Encoder.encode(Encoder.java:<span class="number">363</span>)</div><div class="line">	at org.learn.jave2.ArmToMp3Test.main(ArmToMp3Test.java:<span class="number">35</span>)</div></pre></td></tr></table></figure>
+<p>报这个错这就是没加  <code>jave-nativebin-win64</code>  这个依赖。<br>这里说明下，添加了win-64 jar，执行的时候会默认在本地下载一个  ffmpeg-amd64-2.7.3.exe 。<br><img src="https://cdn.nlark.com/yuque/0/2020/png/370381/1589359729807-6ff1247d-9dfc-4a80-9f19-e132a13c8d08.png#align=left&amp;display=inline&amp;height=84&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=168&amp;originWidth=520&amp;size=10220&amp;status=done&amp;style=none&amp;width=260" alt="image.png"><br>相关源码：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">Encoder encoder = <span class="keyword">new</span> Encoder();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="title">Encoder</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">this</span>.locator = <span class="keyword">new</span> DefaultFFMPEGLocator();</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// DefaultFFMPEGLocator</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="title">DefaultFFMPEGLocator</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="comment">// 获取操作系统类型</span></div><div class="line">    String os = System.getProperty(<span class="string">"os.name"</span>).toLowerCase();</div><div class="line">    <span class="keyword">boolean</span> isWindows = os.contains(<span class="string">"windows"</span>);</div><div class="line">    <span class="keyword">boolean</span> isMac = os.contains(<span class="string">"mac"</span>);</div><div class="line">    LOG.debug(<span class="string">"Os name is &lt;&#123;&#125;&gt; isWindows: &#123;&#125; isMac: &#123;&#125;"</span>, <span class="keyword">new</span> Object[]&#123;os, isWindows, isMac&#125;);</div><div class="line">    File dirFolder = <span class="keyword">new</span> File(System.getProperty(<span class="string">"java.io.tmpdir"</span>), <span class="string">"jave/"</span>);</div><div class="line">    <span class="keyword">if</span> (!dirFolder.exists()) &#123;</div><div class="line">        LOG.debug(<span class="string">"Creating jave temp folder to place executables in &lt;&#123;&#125;&gt;"</span>, dirFolder.getAbsolutePath());</div><div class="line">        dirFolder.mkdirs();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        LOG.debug(<span class="string">"Jave temp folder exists in &lt;&#123;&#125;&gt;"</span>, dirFolder.getAbsolutePath());</div><div class="line">    &#125;</div><div class="line">	<span class="comment">// 获取文件的后缀</span></div><div class="line">    String suffix = isWindows ? <span class="string">".exe"</span> : (isMac ? <span class="string">"-osx"</span> : <span class="string">""</span>);</div><div class="line">    String arch = System.getProperty(<span class="string">"os.arch"</span>);</div><div class="line">    <span class="comment">// 获取 ffmpeg 文件，</span></div><div class="line">    File ffmpegFile = <span class="keyword">new</span> File(dirFolder, <span class="string">"ffmpeg-"</span> + arch + <span class="string">"-"</span> + <span class="string">"2.7.3"</span> + suffix);</div><div class="line">    LOG.debug(<span class="string">"Executable path: &#123;&#125;"</span>, ffmpegFile.getAbsolutePath());</div><div class="line">    <span class="keyword">if</span> (ffmpegFile.exists()) &#123;</div><div class="line">        LOG.debug(<span class="string">"Executable exists in &lt;&#123;&#125;&gt;"</span>, ffmpegFile.getAbsolutePath());</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        LOG.debug(<span class="string">"Need to copy executable to &lt;&#123;&#125;&gt;"</span>, ffmpegFile.getAbsolutePath());</div><div class="line">        <span class="keyword">this</span>.copyFile(<span class="string">"ffmpeg-"</span> + arch + suffix, ffmpegFile);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (!isWindows) &#123;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            Runtime.getRuntime().exec(<span class="keyword">new</span> String[]&#123;<span class="string">"/bin/chmod"</span>, <span class="string">"755"</span>, ffmpegFile.getAbsolutePath()&#125;);</div><div class="line">        &#125; <span class="keyword">catch</span> (IOException var9) &#123;</div><div class="line">            LOG.error(<span class="string">"Error setting executable via chmod"</span>, var9);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">	<span class="comment">// 知道了文件的路径</span></div><div class="line">    <span class="keyword">this</span>.path = ffmpegFile.getAbsolutePath();</div><div class="line">    LOG.debug(<span class="string">"ffmpeg executable found: &#123;&#125;"</span>, <span class="keyword">this</span>.path);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">copyFile</span><span class="params">(String path, File dest)</span> </span>&#123;</div><div class="line">	<span class="comment">// 拷贝文件代码，具体略</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a name="wEmt3"></a></p>
+<h2 id="Jave2-总结"><a href="#Jave2-总结" class="headerlink" title="Jave2 总结"></a>Jave2 总结</h2><p><br>Jave 虽然不在维护了，但是 它的“哥哥” Jave2 出现了，功能还是很强大的，基本上能满足工作的一些对 音频视频 的操作了。<br>如果看了本文你也想玩一下这个工具，需要本文的演示代码以及相关文件(想看高清无码-小电影.mov)的话。可以关注公众号，回复 <strong>Jave2</strong>  获取。<br></p>
+<p><br>如有其他问题，也欢迎留言，一起探讨交流。<br></p>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>如果图片破损请查看：<a href="https://aflyun.blog.csdn.net/article/details/106104532" target="_blank" rel="external">Jave2-Java音频视频编码器</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/img/donate/wechat.jpg" alt="aflyun WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/img/donate/alipay.jpg" alt="aflyun Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      aflyun
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.aflyun.work/posts/fb96d87.html" title="Jave2-Java音频视频编码器">http://www.aflyun.work/posts/fb96d87.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/programming/" rel="tag"># 编程技术</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/fe0ba918.html" rel="next" title="推荐两款程序员必备的画图神器">
+                <i class="fa fa-chevron-left"></i> 推荐两款程序员必备的画图神器
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/run.jpg"
+               alt="aflyun" />
+          <p class="site-author-name" itemprop="name">aflyun</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/dufyun" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://aflyun.blog.csdn.net/" target="_blank" title="CSDN博客">
+                  
+                    <i class="fa fa-fw fa-ravelry"></i>
+                  
+                  CSDN博客
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jave2-Java音频视频编码器"><span class="nav-number">1.</span> <span class="nav-text">Jave2-Java音频视频编码器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Jave2是什么"><span class="nav-number">1.1.</span> <span class="nav-text">Jave2是什么</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-and-requirements"><span class="nav-number">2.</span> <span class="nav-text">Installation and requirements</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Jave2-怎么玩"><span class="nav-number">2.1.</span> <span class="nav-text">Jave2 怎么玩</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#支持的操作系统-要求"><span class="nav-number">2.1.1.</span> <span class="nav-text">支持的操作系统+要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持-Maven-Gradle"><span class="nav-number">2.1.2.</span> <span class="nav-text">支持 Maven/Gradle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实战演练"><span class="nav-number">2.1.3.</span> <span class="nav-text">实战演练</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#将arm文件转为mp3文件"><span class="nav-number">2.1.3.1.</span> <span class="nav-text">将arm文件转为mp3文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用监听器监听转换进度-高级一点的用法"><span class="nav-number">2.1.3.2.</span> <span class="nav-text">使用监听器监听转换进度-高级一点的用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#问题收集"><span class="nav-number">2.1.3.3.</span> <span class="nav-text">问题收集</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jave2-总结"><span class="nav-number">2.2.</span> <span class="nav-text">Jave2 总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后续"><span class="nav-number">2.3.</span> <span class="nav-text">后续</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+	  
+    </main>
+	
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">aflyun</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (search_path.endsWith("json")) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
+<script type="text/javascript" src="/js/src/love.js"></script>
+<script type="text/javascript" src="/js/src/click.js"></script>
+
