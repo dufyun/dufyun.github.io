@@ -13,6 +13,11 @@ gitee 访问地址：[https://dufyun.gitee.io/blog/](https://dufyun.gitee.io/blo
 博客主题使用:[hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
 
 
+## JavaWorld世界
+
+[JavaWorld](http://www.aflyun.work/JavaWorld)
+
+
 ## 我的微信公众号
 
 ![](https://i.loli.net/2019/11/23/uRZ65lMBENTnvzm.png)
